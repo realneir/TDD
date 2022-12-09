@@ -4,7 +4,7 @@
         "title": "Chili Cauliflower",
         "url": "https://i.ibb.co/xgYWBS9/spicy-cauliflower.jpg",
         "size": "STARTERS",
-        "price": 10.90,
+        "price": 40,
         "quantity": 0
     },
     {
@@ -12,7 +12,7 @@
         "title": "Broccoli Tikki",
         "url": "https://i.ibb.co/x8gWysQ/brocolli-tikki.jpg",
         "size": "STARTERS",
-        "price": 10.00,
+        "price": 32,
         "quantity": 0
     },
     {
@@ -20,7 +20,7 @@
         "title": "Corn Cheese Balls",
         "url": "https://i.ibb.co/4fbYBvc/cruchy-cheese-balls.jpg",
         "size": "STARTERS",
-        "price": 9.80,
+        "price": 25,
         "quantity": 0
     },
     {
@@ -28,15 +28,15 @@
         "title": "Garlic Bread",
         "url": "https://i.ibb.co/tHd1pFn/garlic-bread.jpg",
         "size": "STARTERS",
-        "price": 10.99,
+        "price": 15,
         "quantity": 0
     },
     {
         "id": "5",
-        "title": "Kalderetang Kambing",
-        "url": "https://i.ibb.co/xgYWBS9/spicy-cauliflower.jpg",
+        "title": "Crispy Pata",
+        "url": "https://i.ibb.co/y62pH9L/crispy-pata.jpg",
         "size": "LUNCH",
-        "price": 11.90,
+        "price": 35,
         "quantity": 0
     },
     {
@@ -44,7 +44,7 @@
         "title": "Humba",
         "url": "https://i.ibb.co/pPqt8fF/humba.jpg",
         "size": "LUNCH",
-        "price": 8.50,
+        "price": 35,
         "quantity": 0
     },
     {
@@ -52,7 +52,7 @@
         "title": "Chicken Curry",
         "url": "https://i.ibb.co/CH40p2K/chicken-curry.jpg",
         "size": "LUNCH",
-        "price": 12.99,
+        "price": 35,
         "quantity": 0
     },
     {
@@ -60,7 +60,7 @@
         "title": "Carbonara",
         "url": "https://i.ibb.co/g9pTSQT/carbonara.jpg",
         "size": "LUNCH",
-        "price": 10.00,
+        "price": 25,
         "quantity": 0
     },
     {
@@ -68,15 +68,15 @@
         "title": "Coke",
         "url": "https://i.ibb.co/z4LkKwp/coke-bottle.jpg",
         "size": "DRINKS",
-        "price": 14.80,
+        "price": 25,
         "quantity": 0
     },
     {
         "id": "10",
-        "title": "Sprite",
-        "url": "https://i.ibb.co/xgYWBS9/spicy-cauliflower.jpg",
+        "title": "Ice Tea",
+        "url": "https://i.ibb.co/Yk4T7MK/iced-tea.jpg",
         "size": "DRINKS",
-        "price": 7.99,
+        "price": 20,
         "quantity": 0
     },
     {
@@ -84,7 +84,7 @@
         "title": "Mangoy Shake",
         "url": "https://i.ibb.co/28jBvH4/mango-shake.jpg",
         "size": "DRINKS",
-        "price": 9.99,
+        "price": 25,
         "quantity": 0
     },
     {
@@ -92,7 +92,7 @@
         "title": "Calamansi",
         "url": "https://i.ibb.co/4KjXpPG/cucumber-lemon.jpg",
         "size": "DRINKS",
-        "price": 15.90,
+        "price": 25,
         "quantity": 0
     }
 ]
