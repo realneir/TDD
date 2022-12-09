@@ -82,7 +82,7 @@ const Oncet = () => {
   return (
     <div>
         <article>
-        <header className='nav'>
+        <header className='nav' data-test-id = 'nav'>
             <div className='logo'>
             <img  src = "https://tinyurl.com/2s3rvhdw" className='logojapon'/>
             </div>
@@ -94,7 +94,7 @@ const Oncet = () => {
       <Products products={products} sortProducts={sortProducts} addToCart={addToCart} />
       
       </div>
-    <Footer/>
+    <Footer data-test-id = 'footer'/>
     </article>
 
     </div>
