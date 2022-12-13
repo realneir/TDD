@@ -85,7 +85,11 @@ const Oncet = () => {
         <article>
         <header className='nav' data-testid = 'nav'>
             <div className='logo'>
+<<<<<<< HEAD
             <img  src = "https://tinyurl.com/2s3rvhdw" className='logojapon' data-testid="logo"/>
+=======
+            <img  src = "https://i.ibb.co/b17yNf9/logo.png" className='logojapon'/>
+>>>>>>> 1c25e42722283ed86d9e97f7e4aacfa1b535211c
             </div>
       <Categories selectedCategories={selectedCategories} setCategories={setCategories} />
       <Cart products={cart} changeQuantity={changeQuantity}/>
