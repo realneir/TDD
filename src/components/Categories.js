@@ -10,7 +10,8 @@ const Categories = ({selectedCategories, setCategories}) =>  {
                 {
                     Categories.map((size, index) => {
                         return (
-                            <button 
+                            <button
+                                data-testid="navbtns"
                                 className={ "size" + (selectedCategories.includes(size) ? " selected-size" : "")}
                                 key={index}
                                 onClick={() => setCategories(size)}

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, {useState, useEffect} from 'react';
 
 import Categories from './components/Categories';
@@ -82,12 +83,12 @@ const Oncet = () => {
   return (
     <div>
         <article>
-        <header className='nav' data-test-id = 'nav'>
+        <header className='nav' data-testid = 'nav'>
             <div className='logo'>
-            <img  src = "https://i.ibb.co/b17yNf9/logo.png" className='logojapon'/>
+            <img  src = "https://tinyurl.com/2s3rvhdw" className='logojapon' data-testid="logo"/>
             </div>
       <Categories selectedCategories={selectedCategories} setCategories={setCategories} />
-      <Cart products={cart} changeQuantity={changeQuantity} />
+      <Cart products={cart} changeQuantity={changeQuantity}/>
       </header>
       
       <div className='prod'>
