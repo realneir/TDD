@@ -25,7 +25,7 @@ const CardList = ({products, addToCart}) => {
                             products.length === 0 ? <p className="text-center">Sorry, No products of the specified categories :-(</p> :
                             products.map(item => {
                                 return (
-                                    <Card key={item.id} data={item} addToCart={addToCart}  />
+                                    <Card key={item.id} data={item} addToCart={addToCart} />
                                 )
                             })
                         }

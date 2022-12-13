@@ -1,9 +1,10 @@
 import React from "react";
 import { render, screen, cleanup} from "@testing-library/react";
 import Oncet from "./Oncet";
+import '@testing-library/jest-dom';
 
-afterEach(cleanup);
 describe("Check the UI of Header", () => {
+	afterEach(cleanup);
 	it ("has a logo for the application", ()=> {
 		render(<Oncet/>);
 		const val = screen.getByTestId("logo");
@@ -16,9 +17,7 @@ describe("Check the UI of Header", () => {
 	})
 	it ("has a nav button for the cart", async ()=> {
 		render(<Oncet/>);
-		const btns = await screen.getByTestId("navcart");
+		const btns = screen.getByTestId("navcart");
 		expect(btns).toBeInTheDocument();
 	})
 })
-
-
