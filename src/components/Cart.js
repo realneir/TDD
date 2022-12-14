@@ -39,7 +39,7 @@ const Cart = ({products, changeQuantity}) => {
                         Cart
                     </h3> 
 
-                    <div className="cart-list">
+                    <div className="cart-list" data-testid="cart">
                         {
                             products.length === 0 
                             ? 
@@ -59,13 +59,13 @@ const Cart = ({products, changeQuantity}) => {
                         }
                     </div>
 
-                    <div className="checkout-div">
+                    <div className="checkout-div" data-testid="checkout">
                         <div className="checkout">
                                 <div className="subtotal-div">
                                     <p className="subtotal">SUBTOTAL</p>
                                     <p className="subtotal-price">₱ {sum.toFixed(2)}</p>
                                 </div>
-                                <button className="checkout-btn" onClick={checkout}>CHECKOUT</button>
+                                <button className="checkout-btn" data-testid="checkoutbtn" onClick={checkout}>CHECKOUT</button>
                         </div>
                     </div>
                     </div>

@@ -13,7 +13,7 @@ const Products = ({products, sortProducts, addToCart}) =>  {
     
     return (
         
-        <div className="products" >
+        <div className="products" data-testId="product">
             <div className="products-nav">
                 <div className="sort-list">
                     Sort by&nbsp;: &nbsp;

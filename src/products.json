@@ -1,8 +1,10 @@
+
 [
+
     {
         "id": "1",
         "title": "Chili Cauliflower",
-        "url": "https://i.ibb.co/xgYWBS9/spicy-cauliflower.jpg",
+        "img": "./assets/TDD/spicy_cauliflower.jpg",
         "size": "STARTERS",
         "price": 40,
         "quantity": 0
@@ -10,7 +12,7 @@
     {
         "id": "2",
         "title": "Broccoli Tikki",
-        "url": "https://i.ibb.co/x8gWysQ/brocolli-tikki.jpg",
+        "img": "./assets/TDD/brocolli-tikki.jpg",
         "size": "STARTERS",
         "price": 32,
         "quantity": 0
@@ -18,7 +20,7 @@
     {
         "id": "3",
         "title": "Corn Cheese Balls",
-        "url": "https://i.ibb.co/4fbYBvc/cruchy-cheese-balls.jpg",
+        "img": "./assets/TDD/cruchy-cheese-balls.jpg",
         "size": "STARTERS",
         "price": 25,
         "quantity": 0
@@ -26,7 +28,7 @@
     {
         "id": "4",
         "title": "Garlic Bread",
-        "url": "https://i.ibb.co/tHd1pFn/garlic-bread.jpg",
+        "img": "./assets/TDD/garlic-bread.jpg",
         "size": "STARTERS",
         "price": 15,
         "quantity": 0
@@ -34,7 +36,7 @@
     {
         "id": "5",
         "title": "Crispy Pata",
-        "url": "https://i.ibb.co/y62pH9L/crispy-pata.jpg",
+        "img": "./assets/TDD/crispy-pata.jpg",
         "size": "LUNCH",
         "price": 35,
         "quantity": 0
@@ -42,7 +44,7 @@
     {
         "id": "6",
         "title": "Humba",
-        "url": "https://i.ibb.co/pPqt8fF/humba.jpg",
+        "img": "./assets/TDD/humba.jpg",
         "size": "LUNCH",
         "price": 35,
         "quantity": 0
@@ -50,7 +52,7 @@
     {
         "id": "7",
         "title": "Chicken Curry",
-        "url": "https://i.ibb.co/CH40p2K/chicken-curry.jpg",
+        "img": "./assets/TDD/chicken-curry.jpg",
         "size": "LUNCH",
         "price": 35,
         "quantity": 0
@@ -58,7 +60,7 @@
     {
         "id": "8",
         "title": "Carbonara",
-        "url": "https://i.ibb.co/g9pTSQT/carbonara.jpg",
+        "img": "./assets/TDD/carbonara.jpg",
         "size": "LUNCH",
         "price": 25,
         "quantity": 0
@@ -66,7 +68,7 @@
     {
         "id": "9",
         "title": "Coke",
-        "url": "https://i.ibb.co/z4LkKwp/coke-bottle.jpg",
+        "img": "./assets/TDD/coke-bottle.jpg",
         "size": "DRINKS",
         "price": 25,
         "quantity": 0
@@ -74,15 +76,15 @@
     {
         "id": "10",
         "title": "Ice Tea",
-        "url": "https://i.ibb.co/Yk4T7MK/iced-tea.jpg",
+        "img": "./assets/TDD/iced-tea.jpg",
         "size": "DRINKS",
         "price": 20,
         "quantity": 0
     },
     {
         "id": "11",
-        "title": "Mangoy Shake",
-        "url": "https://i.ibb.co/28jBvH4/mango-shake.jpg",
+        "title": "Mango Shake",
+        "img": "./assets/TDD/mango-shake.jpg",
         "size": "DRINKS",
         "price": 25,
         "quantity": 0
@@ -90,7 +92,7 @@
     {
         "id": "12",
         "title": "Calamansi",
-        "url": "https://i.ibb.co/4KjXpPG/cucumber-lemon.jpg",
+        "img": "./assets/TDD/cucumber-lemon.jpg",
         "size": "DRINKS",
         "price": 25,
         "quantity": 0

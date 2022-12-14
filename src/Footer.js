@@ -5,7 +5,7 @@ const Footer = () => {
 
 return(
  <>
- <footer>
+ <footer data-testid = 'footer'>
     <div class="content">
       <div class="top">
         <div class="logo-details">
