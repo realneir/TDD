@@ -273,12 +273,12 @@
 .subtotal {
   color: white;
   font-weight: bolder;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .subtotal-price {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .checkout-btn {
@@ -302,7 +302,7 @@
 .empty-cart p {
   color: #353535;
   padding: 10px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   letter-spacing: 0.07ch;
 }
@@ -338,7 +338,7 @@
 .item-title {
   color: darkgoldenrod;
   font-weight: bolder;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 
