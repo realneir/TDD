@@ -95,7 +95,7 @@ const Oncet = () => {
       <Products products={products} sortProducts={sortProducts} addToCart={addToCart} />
       
       </div>
-    <Footer data-test-id = 'footer'/>
+    <Footer />
     </article>
 
     </div>
