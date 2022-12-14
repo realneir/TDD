@@ -21,6 +21,11 @@ describe("Check the UI of Cart", () => {
         const val = screen.getByTestId("checkoutbtn");
         expect(val).toBeInTheDocument();
     });
+    it("can add items in cart" , () => {
+        render(<Oncet />); 
+        const cardItem = screen.getByTestId("product");
+        expect(cardItem).toBeTruthy();
+    });
 	// it("has a button to add quantity" , async () => {
     //     render(<CartItem />); 
     //     const btn = await screen.getByTestId("add");
