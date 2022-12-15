@@ -6,7 +6,7 @@ const Footer = () => {
 return(
  <>
  <footer data-testid = 'footer'>
-    <div class="content">
+    <div class="content" data-testid="footercontent">
       <div class="top">
         <div class="logo-details">
           <i class="fab fa-slack"></i>
@@ -42,7 +42,7 @@ return(
         </ul>
       </div>
     </div>
-    <div class="bottom-details">
+    <div class="bottom-details" data-testid="btmdetails">
       <div class="bottom_text">
         <span class="copyright_text">Copyright © 2022 <a href="#">Oncet.</a>All rights reserved</span>
         <span class="policy_terms">

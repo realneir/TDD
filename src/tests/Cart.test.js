@@ -26,6 +26,16 @@ describe("Check the UI of Cart", () => {
         const cardItem = screen.getByTestId("product");
         expect(cardItem).toBeTruthy();
     });
+    it("should check if there is the message: no items in cart" , async () => {
+        render(<Oncet />); 
+        const val = screen.queryByTestId("empty")
+		expect(val).toBeInTheDocument();
+    });
+    it("can display the subtotal" , async () => {
+        render(<Oncet />); 
+        const val = screen.queryByTestId("subtotal")
+		expect(val).toBeInTheDocument();
+    });
 	// it("has a button to add quantity" , async () => {
     //     render(<CartItem />); 
     //     const btn = await screen.getByTestId("add");

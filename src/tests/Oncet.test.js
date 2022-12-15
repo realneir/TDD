@@ -15,11 +15,6 @@ describe("Checking the UI of Food Shop", () => {
 		const val = screen.getByTestId("logo");
 		expect(val).toBeInTheDocument();
 	})
-	it ("has a logo for the application", ()=> {
-		render(<Oncet/>);
-		const val = screen.getByTestId("logo");
-		expect(val).toBeInTheDocument();
-	})
 	it ("has the categories", async ()=> {
 		render(<Oncet/>);
         const btns = await screen.getAllByTestId("navbtns");
@@ -33,6 +28,16 @@ describe("Checking the UI of Food Shop", () => {
 	it ("has a footer", ()=> {
 		render(<Oncet/>);
 		const val = screen.getByTestId("footer");
+		expect(val).toBeInTheDocument();
+	})
+	it ("has a content on footer", ()=> {
+		render(<Oncet/>);
+		const val = screen.getByTestId("footercontent");
+		expect(val).toBeInTheDocument();
+	})
+	it ("has a bottom details on footer", ()=> {
+		render(<Oncet/>);
+		const val = screen.getByTestId("btmdetails");
 		expect(val).toBeInTheDocument();
 	})
 })

@@ -16,7 +16,7 @@ const CardList = ({products, addToCart}) => {
     return (
         <Fragment>
             {
-                delay ? <img src="https://career.alliedvision.com/persis/images_avt/gicccccphy.gif" alt="loader" className="loader" />
+                delay ? <img src="https://career.alliedvision.com/persis/images_avt/gicccccphy.gif" alt="loader" className="loader" data-testid="loader"/>
                 :
                 <div>
                     <span className="products-length">{products.length} Item(s) found.</span>
