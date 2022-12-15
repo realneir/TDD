@@ -25,9 +25,9 @@ const Cart = ({products, changeQuantity}) => {
 
     return (
         <Fragment>
-            <div id="sidebar" className={classActive ? "active" : ""} data-testid="navcart">
+            <div id="sidebar" className={classActive ? "active" : ""}>
                 <div className="sidebar-content">
-                    <div className="toggle-btn" onClick={toggleButton}>
+                    <div className="toggle-btn" onClick={toggleButton} data-testid="navcart">
                         <span className="span-1"></span>
                         <span className="span-2"></span>
                         <span className="span-3"></span>
