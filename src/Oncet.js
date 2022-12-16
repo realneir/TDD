@@ -88,7 +88,7 @@ const Oncet = () => {
             <img  src = "https://i.ibb.co/b17yNf9/logo.png" className='logojapon' data-testid="logo"/>
             </div>
       <Categories selectedCategories={selectedCategories} setCategories={setCategories} />
-      <Cart products={cart} changeQuantity={changeQuantity}/>
+      <Cart products={cart} changeQuantity={changeQuantity}/> 
       </header>
       
       <div className='prod'>

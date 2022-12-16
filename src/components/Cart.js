@@ -28,9 +28,7 @@ const Cart = ({products, changeQuantity}) => {
             <div id="sidebar" className={classActive ? "active" : ""}>
                 <div className="sidebar-content">
                     <div className="toggle-btn" onClick={toggleButton} data-testid="navcart">
-                        <span className="span-1"></span>
-                        <span className="span-2"></span>
-                        <span className="span-3"></span>
+                    <img src="https://i.ibb.co/Kmm2YdD/Cart-Icon-PNG-Graphic-Cave-e1461785088730-300x300.png" alt="cart" className="slider-btn"/>
                     </div>
                     
                     <div className="cart-content">
