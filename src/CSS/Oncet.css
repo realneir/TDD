@@ -413,6 +413,37 @@
   background-color: white;
   padding: 20px;
   width: 300px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  border-radius: 10px;
+}
+.info{
+  text-align: center;
+  font-size: 20px;
+ font-weight: 600;
+}
+.checkout-page {
+ padding: 10px;
+}
+.input-box{
+  
+  padding: 5px;
+}
+.input-field{
+  width: 100%;
+  border-radius: 5px;
+}
+.payment-mode{
+  padding-top: 5px;
+}
+.check-btn{
+  width: 100%;
+  margin-top: 30px;
 }
 .overlay {
   position: fixed;

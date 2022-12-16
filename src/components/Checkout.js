@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import CartItem from './CartItem';
 // import '../CSS/checkout.css';
-
+import '../CSS/Oncet.css';
 
 const Checkout = ({
   products,
@@ -28,25 +28,35 @@ const Checkout = ({
         }
         if(firstName&&lastName)
         {
-        console.log("Email: ",firstName,"\nPassword: ",lastName)
+        console.log("  Email: ",firstName,"\n  Password: ",lastName)
         }
     }
 
 
     return (
         show ? (
-          <div className="checkout-modal">
+          <div className="checkout-page">
               { 
                       <>
            <form onSubmit={handleSubmit}>
-               <div>Payment Info</div>
-               <div>
-                   <input placeholder="Email" onChange={e=>setFirstName(e.target.value)} />
+               <div className="info">Payment Info</div>
+               <div className="input-box">
+                   <input className="input-field" placeholder="Email" onChange={e=>setFirstName(e.target.value)} />
                </div>
                {error&&firstName.length<=0?
                <label>First Name can't be Empty</label>:""}
-               <div>
-                   <input placeholder="Password" onChange={e=>setLastName(e.target.value)} />
+               <div className="input-box">
+                   <input className="input-field" placeholder="Password" onChange={e=>setLastName(e.target.value)} />
+               </div>
+               <div className="payment-mode">
+                   Mode of Payment:
+                   </div>
+                   <div>
+               <select>
+                        <option>Cash</option>
+                        <option>E-Wallet</option>
+                        <option>Card</option>
+                    </select>
                </div>
                {error&&lastName.length<=0?
                <label>Last Name can't be Empty</label>:""}
