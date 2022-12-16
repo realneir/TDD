@@ -212,6 +212,11 @@ $FontSize: 1.2rem;
     height: 1%;
     width: 1%;
 }
+.cart-content{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
 .cart-content h3 {
     display: flex;
     justify-content: center;
@@ -384,3 +389,49 @@ $FontSize: 1.2rem;
         height: 54vh;
     }
 }
+
+.checkout-modal {
+    position: fixed!important;
+  }
+  .modal {
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: auto;
+	position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+	z-index:5;
+} 
+  .checkout-modal form {
+    padding-top: 100px;
+    overflow: auto;
+    z-index: 9999;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	position: fixed;
+	width: 1000px;
+	// max-width: 800px;
+	height: 1000px;
+	// margin: auto;
+	padding: 20px;
+	background-color: white;
+    border-radius: 5px;
+    padding-bottom: 1000px;
+  }
+  
+//   .checkout-modal button {
+//     color:gray.opacity($color: #8d8d8d)
+//   }
+  
+//   .checkout-modal button:hover {
+//     color: black;
+//   }
+  .check-btn{
+    color:gray.opacity($color: #eb0606)
+  }
+  .check-btn :hover{
+    color: black;
+  }

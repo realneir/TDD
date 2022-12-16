@@ -7,6 +7,7 @@ import Cart from './components/Cart';
 import filterList from './components/filterList';
 import './CSS/Oncet.css';
 import Footer from './Footer';
+import Checkout from './components/Checkout';
 
 const Oncet = () => {
 
@@ -79,7 +80,7 @@ const Oncet = () => {
     setCart(productList);
     localStorage.setItem("cart", JSON.stringify(productList));
   }
-  
+
   return (
     <div>
         <article>
@@ -89,6 +90,7 @@ const Oncet = () => {
             </div>
       <Categories selectedCategories={selectedCategories} setCategories={setCategories} />
       <Cart products={cart} changeQuantity={changeQuantity}/> 
+      
       </header>
       
       <div className='prod'>
