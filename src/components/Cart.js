@@ -82,7 +82,7 @@ import Checkout from './Checkout';
 import '../CSS/Oncet.css';
 
 const Cart = ({products, changeQuantity,show}) => {
-  // Use the useHistory hook to access the history object
+  
   const [showCheckout, setshowCheckout] = useState(false);
 
   const [classActive, toggleClass] = useState(false);
@@ -124,6 +124,7 @@ const Cart = ({products, changeQuantity,show}) => {
                     key={products.id} 
                     product={products} 
                     changeQuantity={changeQuantity} 
+                    sm = {sum}
                     />
                     </div>
                     </div>  
@@ -138,7 +139,7 @@ const Cart = ({products, changeQuantity,show}) => {
                         {
                             products.length === 0 
                             ? 
-                            <div className="empty-cart">
+                            <div className="empty-cart" data-testid="empty">
                                 <p>There are no items in Cart, Please add items to checkout!!!</p>
                             </div> 
                             :
@@ -158,7 +159,7 @@ const Cart = ({products, changeQuantity,show}) => {
                         <div className="checkout">
                                 <div className="subtotal-div">
                                     <p className="subtotal">SUBTOTAL</p>
-                                    <p className="subtotal-price">₱ {sum.toFixed(2)}</p>
+                                    <p className="subtotal-price" data-testid="subtotal">₱ {sum.toFixed(2)}</p>
                                 </div>
                                 <button className="checkout-btn" data-testid="checkoutbtn" onClick={showCheckoutModal}>CHECKOUT</button>
                         </div>

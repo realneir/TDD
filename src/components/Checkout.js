@@ -1,29 +1,30 @@
 import React, { useState, useEffect } from 'react';
 
 import CartItem from './CartItem';
-// import '../CSS/checkout.css';
+
 import '../CSS/Oncet.css';
 
 const Checkout = ({
   products,
   setShowCheckout,
   show,
+  sm
   }) => {
     const [sum, setSum] = useState(0);
 
-    // define a function to handle form submission
+ 
     const [firstName,setFirstName]=useState('')
     const [lastName,setLastName]=useState('')
     const [error,setError]=useState(false)
 
 
     const checkout = () => {
-        alert(`Checkout - Subtotal: ₱ ${sum.toFixed(2)}`);
+        alert(`Checkout - Subtotal: ₱ ${sm.toFixed(2)}`);
     }
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        if(firstName.length===0||lastName.length===0){
+        if(firstName.length==0||lastName.length==0){
             setError(true)
         }
         if(firstName&&lastName)
@@ -46,7 +47,7 @@ const Checkout = ({
                {error&&firstName.length<=0?
                <label>First Name can't be Empty</label>:""}
                <div className="input-box">
-                   <input className="input-field" placeholder="Password" onChange={e=>setLastName(e.target.value)} />
+                   <input className="input-field" placeholder="Address" onChange={e=>setLastName(e.target.value)} />
                </div>
                <div className="payment-mode">
                    Mode of Payment:
@@ -59,9 +60,9 @@ const Checkout = ({
                     </select>
                </div>
                {error&&lastName.length<=0?
-               <label>Last Name can't be Empty</label>:""}
+               <label>address can't be Empty</label>:""}
                <div>
-                   <button onClick={checkout} className="check-btn">
+                   <button onClick={error == true ? checkout : null} className="check-btn">
                        Submit
                    </button>
                </div>
