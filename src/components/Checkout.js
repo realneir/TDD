@@ -62,6 +62,9 @@ const Checkout = ({
                             <div className="input-box">
                                 <input className="input-field" placeholder="Address" onChange={e => setLastName(e.target.value)} />
                             </div>
+
+                            {error && lastName.length <= 0 ?
+                                <label>Address can't be Empty</label> : ""}
                             <div className="payment-mode">
                                 Mode of Payment:
                             </div>
@@ -72,17 +75,12 @@ const Checkout = ({
                                     <option>Card</option>
                                 </select>
                             </div>
-                            {error && lastName.length <= 0 ?
-                                <label>address can't be Empty</label> : ""}
+                            
                             <div>
+                                
+                                {/* button */}
                                 <button onClick={error == true ? checkout : null} className="check-btn">
-                                    Submit
-                                </button>
-
-
-                                {/* experimental button */}
-                                <button onClick={error == true ? checkout : null} className="check-btn">
-                                    experiment Submit button
+                                    Submit 
                                 </button>
 
                                 {/* laing way para pop up  */}
@@ -90,12 +88,11 @@ const Checkout = ({
                                 <div class="popup" id='popup'>
                                     <img src="https://i.ibb.co/b17yNf9/logo.png" className='logojapon' data-testid="logo" />
                                     <h1>Checkout</h1>
+                                    <h2>Email: {firstName}</h2>
+                                    <h2>Address: {lastName}</h2>
                                     <h2>Subtotal: ₱ ${sm.toFixed(2)}</h2>
                                     <button type="button" onClick={() => closePopup()}>ok</button>
                                 </div>
-
-
-
 
                             </div>
                         </form>
