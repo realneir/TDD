@@ -161,7 +161,8 @@ const Cart = ({products, changeQuantity,show}) => {
                                     <p className="subtotal">SUBTOTAL</p>
                                     <p className="subtotal-price" data-testid="subtotal">₱ {sum.toFixed(2)}</p>
                                 </div>
-                                <button className="checkout-btn" data-testid="checkoutbtn" onClick={showCheckoutModal}>CHECKOUT</button>
+                                <button className="checkout-btn" data-testid="checkoutbtn" onClick={ sum > 0 && showCheckoutModal}>CHECKOUT</button>
+                              { sum <= 0 && <p>Cart is empty! add items on the cart!</p>}
                         </div>
                     </div>
                     </div>

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState, useEffect } from 'react';
 
 import CartItem from './CartItem';
@@ -16,19 +17,20 @@ const Checkout = ({
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [error, setError] = useState(false)
+    
 
     // ni add ta ug fucntion
 
     let popup = document.getElementById("popup");
 
 
-    const checkout = () => {
-        // alert(`Checkout - Subtotal: ₱ ${sm.toFixed(2)}`);
-        openPopup();
+    const checkout = (value) => {
+
+     checkout.value && openPopup();
     }
 
     const openPopup = () => {
-        popup.classList.add("open-popup");
+       popup.classList.add( "open-popup");
     }
 
     const closePopup = () => {
@@ -38,9 +40,10 @@ const Checkout = ({
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (firstName.length == 0 || lastName.length == 0) {
+        if (firstName.length <= 0 || lastName.length <= 0) {
             setError(true)
         }
+      
         if (firstName && lastName) {
             console.log("  Email: ", firstName, "\n  Password: ", lastName)
         }
@@ -79,9 +82,11 @@ const Checkout = ({
                             <div>
                                 
                                 {/* button */}
-                                <button onClick={error == true ? checkout : null} className="check-btn">
+                               {error === false ? <button onClick={ checkout(false) } className="check-btn">
                                     Submit 
-                                </button>
+                                </button> : <button onClick={checkout(true)} className="check-btn">
+                                    Submit 
+                                </button>}
 
                                 {/* laing way para pop up  */}
 
