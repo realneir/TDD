@@ -24,7 +24,10 @@ const Checkout = ({
 
     const checkout = () => {
         // alert(`Checkout - Subtotal: ₱ ${sm.toFixed(2)}`);
-        openPopup();
+        if (firstName.length != 0 && lastName.length != 0) {
+            openPopup();
+        }
+
     }
 
     const openPopup = () => {
@@ -75,12 +78,12 @@ const Checkout = ({
                                     <option>Card</option>
                                 </select>
                             </div>
-                            
+
                             <div>
-                                
+
                                 {/* button */}
                                 <button onClick={error === true ? checkout : null} className="check-btn">
-                                    Submit 
+                                    Submit
                                 </button>
 
                                 {/* laing way para pop up  */}
